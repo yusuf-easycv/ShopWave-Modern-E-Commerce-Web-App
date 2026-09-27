@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopWave — Modern E-commerce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,sans-serif;color:#111a35;background:#fff}a{text-decoration:none;color:inherit}button,input{font:inherit}.announcement{background:#101a3c;color:#fff;text-align:center;padding:9px;font-size:12px;letter-spacing:.2px}.nav{height:76px;display:flex;align-items:center;gap:30px;padding:0 6%;position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(15px);z-index:20;border-bottom:1px solid #eef0f6}.logo{font-size:22px;font-weight:800;white-space:nowrap}.logo span:last-child{color:#6848ff}.search{height:42px;border:1px solid #e6e9f2;border-radius:12px;display:flex;align-items:center;gap:8px;padding:0 13px;flex:1;max-width:330px;background:#f8f9fc}.search input{border:0;outline:0;background:transparent;width:100%;font-size:12px}.nav nav{display:flex;gap:22px;font-size:12px;font-weight:600}.nav nav a:hover{color:#6848ff}.nav-icons{display:flex;gap:9px;margin-left:auto}.nav-icons button{border:0;background:transparent;font-size:19px;position:relative;cursor:pointer}.nav-icons b{position:absolute;right:-5px;top:-5px;background:#6848ff;color:#fff;font-size:9px;border-radius:20px;padding:3px 5px}.hero{min-height:610px;display:flex;align-items:center;padding:55px 8%;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 42%,#293c85 0,#10183c 38%,#080d25 72%);color:#fff}.hero-glow{position:absolute;width:700px;height:700px;border-radius:50%;right:-180px;top:-100px;background:radial-gradient(circle,rgba(115,76,255,.45),transparent 67%);filter:blur(15px)}.orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.7}.orb1{width:15px;height:15px;background:#a78bfa;left:52%;top:20%;animation:float 5s ease-in-out infinite}.orb2{width:9px;height:9px;background:#5eead4;left:77%;bottom:18%;animation:float 4s ease-in-out infinite reverse}.hero-copy{width:52%;position:relative;z-index:2}.eyebrow{font-size:11px;letter-spacing:2px;color:#7258ff;font-weight:800;margin:0 0 12px}.hero .eyebrow{color:#a995ff}.hero h1{font-size:clamp(42px,5vw,72px);line-height:1.02;margin:0 0 20px;letter-spacing:-3px}.hero h1 em{font-style:normal;background:linear-gradient(90deg,#b49cff,#7f8cff,#4fe0d2);-webkit-background-clip:text;color:transparent}.hero-copy>p:not(.eyebrow){color:#bfc6df;max-width:510px;line-height:1.7;font-size:15px}.hero-buttons{display:flex;gap:12px;margin:28px 0}.btn{border:0;border-radius:11px;padding:13px 20px;font-weight:700;font-size:12px;cursor:pointer;display:inline-block}.primary{background:linear-gradient(135deg,#7548ff,#5744e8);color:#fff;box-shadow:0 12px 28px rgba(91,65,232,.25)}.ghost{border:1px solid #3b4670;color:#fff}.hero-stats{display:flex;gap:28px;font-size:11px;color:#8993b5}.hero-stats strong{color:#fff;font-size:14px;margin-right:4px}.hero-stage{height:470px;flex:1;position:relative;display:flex;align-items:center;justify-content:center}.stage-ring{width:390px;height:390px;border:1px solid rgba(160,150,255,.25);border-radius:50%;position:absolute;animation:spin 20s linear infinite}.stage-ring:before,.stage-ring:after{content:"";position:absolute;border:1px solid rgba(100,230,220,.18);border-radius:50%}.stage-ring:before{inset:35px}.stage-ring:after{inset:-35px}.main-product{width:255px;height:320px;border-radius:26px;background:linear-gradient(145deg,#242d53,#0c1129);box-shadow:0 35px 80px rgba(0,0,0,.5);padding:25px;position:relative;z-index:3;transform:rotate(-5deg);animation:productFloat 4s ease-in-out infinite}.main-product .device{height:205px;display:flex;align-items:center;justify-content:center;font-size:130px;filter:drop-shadow(0 20px 25px rgba(0,0,0,.45))}.main-product small{color:#8e9aff;font-size:9px;font-weight:800;letter-spacing:1.5px}.main-product h3{margin:5px 0;font-size:15px}.main-product strong{font-size:18px}.shine{position:absolute;inset:0;background:linear-gradient(120deg,transparent 25%,rgba(255,255,255,.13),transparent 55%);transform:translateX(-120%);animation:shine 4s infinite;border-radius:26px}.floating-card{position:absolute;z-index:5;background:rgba(255,255,255,.95);color:#131a34;padding:12px 15px;border-radius:15px;box-shadow:0 18px 45px rgba(0,0,0,.25);display:flex;align-items:center;gap:9px;font-size:21px;animation:float 4s ease-in-out infinite}.floating-card span{font-size:9px;color:#727a92}.floating-card b{font-size:11px;color:#5f48ed}.card-a{top:45px;right:25px}.card-b{bottom:65px;left:10px;animation-delay:1s}.card-c{bottom:10px;right:45px;animation-delay:2s}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;padding:25px 8%;border-bottom:1px solid #edf0f6}.benefits>div{display:flex;align-items:center;gap:12px;font-size:20px}.benefits span{display:flex;flex-direction:column}.benefits b{font-size:11px}.benefits small{font-size:9px;color:#8b91a5;margin-top:3px}.section{padding:70px 8%}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.section-head h2{font-size:30px;margin:0;letter-spacing:-1px}.section-head>a{font-size:11px;color:#6249ed;font-weight:800}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{border:1px solid #eceef4;border-radius:18px;padding:12px;transition:.25s;background:#fff}.product:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(26,32,60,.1)}.pic{height:205px;border-radius:13px;background:linear-gradient(135deg,#f5f7fb,#e8ebf5);display:flex;align-items:center;justify-content:center;font-size:92px;position:relative}.heart{position:absolute;right:10px;top:10px;border:0;background:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer}.product h3{font-size:12px;margin:12px 4px 5px}.rating{font-size:10px;color:#ffb21c;margin:0 4px}.rating span{color:#8d94a7}.price{font-weight:800;font-size:14px;margin:7px 4px}.add{width:100%;border:0;background:#6148ed;color:#fff;border-radius:9px;padding:10px;font-size:10px;font-weight:800;cursor:pointer}.promo-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:0 8% 60px}.promo{min-height:225px;border-radius:20px;padding:30px;display:flex;align-items:center;justify-content:space-between;overflow:hidden}.promo p{font-size:9px;font-weight:800;letter-spacing:1px}.promo h2{font-size:25px;margin:5px 0 20px}.promo a{font-size:10px;font-weight:800}.electronics{background:linear-gradient(120deg,#e8f1ff,#d8e0ff)}.fashion{background:linear-gradient(120deg,#f9f1ff,#efe0ff)}.promo-art{font-size:80px;transform:rotate(-8deg);filter:drop-shadow(0 20px 18px rgba(50,50,80,.18))}.people{font-size:60px}.categories{background:#fafbfe}.category-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}.category-grid button{border:1px solid #e8eaf1;background:#fff;border-radius:16px;padding:20px 10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:30px}.category-grid button:hover{border-color:#7559ef;transform:translateY(-3px)}.category-grid b{font-size:10px}.category-grid small{font-size:8px;color:#9399aa}.newsletter{margin:70px 8%;padding:45px 55px;border-radius:24px;background:linear-gradient(120deg,#101a3c,#1d2c63);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:25px}.newsletter h2{margin:0 0 7px;font-size:27px}.newsletter p:not(.eyebrow){color:#b9c0d8;font-size:11px}.newsletter form{display:flex;background:#fff;border-radius:11px;padding:4px}.newsletter input{border:0;outline:0;padding:10px 12px;min-width:220px;font-size:11px}.newsletter .btn{padding:11px 16px}footer{background:#0b1028;color:#9fa7c0;padding:50px 8% 25px;display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:30px;position:relative}footer .logo{color:#fff}footer p{font-size:10px;line-height:1.7;max-width:250px}footer h4{color:#fff;font-size:11px;margin:4px 0 15px}footer>div>a{display:block;font-size:10px;margin:10px 0}.copyright{grid-column:1/-1;border-top:1px solid #252b45;padding-top:20px;font-size:9px}.cart-panel{position:fixed;right:-420px;top:0;height:100vh;width:390px;background:#fff;z-index:40;padding:25px;box-shadow:-20px 0 60px rgba(0,0,0,.15);transition:.3s;overflow:auto}.cart-panel.open{right:0}.overlay{position:fixed;inset:0;background:rgba(4,7,20,.45);z-index:30;opacity:0;pointer-events:none;transition:.3s}.overlay.open{opacity:1;pointer-events:auto}.cart-top{display:flex;justify-content:space-between;align-items:center}.cart-top h2{font-size:20px}.cart-top button{border:0;background:#f3f4f8;border-radius:50%;width:32px;height:32px;cursor:pointer}.cart-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid #eee;align-items:center}.cart-item .mini{font-size:38px;background:#f4f5fa;padding:8px;border-radius:10px}.cart-item h4{margin:0;font-size:11px}.cart-item small{color:#7d8495}.cart-total{display:flex;justify-content:space-between;padding:25px 0;font-size:14px}.checkout{width:100%}@keyframes float{50%{transform:translateY(-13px)}}@keyframes productFloat{50%{transform:rotate(-2deg) translateY(-10px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes shine{0%,35%{transform:translateX(-120%)}70%,100%{transform:translateX(120%)}}@media(max-width:900px){.nav nav{display:none}.hero{padding:45px 6%;min-height:700px}.hero-copy{width:100%;text-align:center}.hero-copy>p:not(.eyebrow){margin:0 auto}.hero-stage{position:absolute;opacity:.35;inset:210px 0 0}.hero-stats,.hero-buttons{justify-content:center}.benefits{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr)}.category-grid{grid-template-columns:repeat(3,1fr)}.promo-grid{grid-template-columns:1fr}footer{grid-template-columns:1fr 1fr}.newsletter{flex-direction:column;align-items:flex-start}}@media(max-width:550px){.nav{padding:0 4%;gap:10px}.search{display:none}.hero h1{font-size:43px}.hero{min-height:650px;padding:40px 5%}.benefits{grid-template-columns:1fr 1fr;padding:20px 5%}.section,.promo-grid{padding-left:5%;padding-right:5%}.product-grid{gap:10px}.pic{height:150px;font-size:65px}.promo{padding:22px}.promo h2{font-size:20px}.category-grid{grid-template-columns:repeat(2,1fr)}.newsletter{margin:50px 5%;padding:30px}.newsletter form{width:100%}.newsletter input{min-width:0;width:100%}.cart-panel{width:100%}footer{padding-left:5%;padding-right:5%}}
+
+</style>
+</head>
+<body>
+<div class="announcement">Free shipping on orders over $50 · 30-day easy returns · Secure checkout</div>
+
+<header class="nav">
+  <a class="logo" href="#"><span>🛍</span> Shop<span>Wave</span></a>
+  <div class="search"><span>⌕</span><input id="searchInput" placeholder="Search for products..."></div>
+  <nav>
+    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">About</a>
+  </nav>
+  <div class="nav-icons"><button>♙</button><button>♡</button><button id="cartBtn">🛒<b id="cartCount">0</b></button></div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-glow"></div><div class="orb orb1"></div><div class="orb orb2"></div>
+  <div class="hero-copy">
+    <p class="eyebrow">✦ THE NEW SHOPPING EXPERIENCE</p>
+    <h1>Better Products.<br><em>Brighter Future.</em></h1>
+    <p>Discover premium tech, fashion and everyday essentials — beautifully curated and delivered to your door.</p>
+    <div class="hero-buttons"><a class="btn primary" href="#shop">Shop Now →</a><a class="btn ghost" href="#categories">Explore Categories</a></div>
+    <div class="hero-stats"><span><strong>10K+</strong> Happy customers</span><span><strong>4.9/5</strong> Average rating</span></div>
+  </div>
+  <div class="hero-stage" aria-label="Animated product showcase">
+    <div class="stage-ring"></div>
+    <div class="product-card main-product"><div class="shine"></div><div class="device">📱</div><div><small>NEW ARRIVAL</small><h3>iPhone 15 Pro</h3><strong>$999</strong></div></div>
+    <div class="floating-card card-a">🎧 <span>Premium Audio<br><b>20% OFF</b></span></div>
+    <div class="floating-card card-b">⚡ <span>Fast Delivery<br><b>24/7 Support</b></span></div>
+    <div class="floating-card card-c">★ <span>Top Rated<br><b>4.9 / 5</b></span></div>
+  </div>
+</section>
+
+<section class="benefits">
+ <div>🚚 <span><b>Free Shipping</b><small>On orders over $50</small></span></div>
+ <div>🔒 <span><b>Secure Payment</b><small>100% secure checkout</small></span></div>
+ <div>◷ <span><b>24/7 Support</b><small>We're here to help</small></span></div>
+ <div>↩ <span><b>Easy Returns</b><small>30 days return policy</small></span></div>
+</section>
+
+<section id="shop" class="section">
+ <div class="section-head"><div><p class="eyebrow">HANDPICKED FOR YOU</p><h2>Featured Products</h2></div><a href="#shop">View All →</a></div>
+ <div id="products" class="product-grid"></div>
+</section>
+
+<section class="promo-grid">
+ <div class="promo electronics"><div><p>LIMITED OFFER</p><h2>Up to 50% Off<br>on Electronics</h2><a href="#shop">Shop Deals →</a></div><div class="promo-art">🎧📱</div></div>
+ <div class="promo fashion"><div><p>NEW COLLECTION</p><h2>Modern Fashion<br>for Everyone</h2><a href="#shop">Discover →</a></div><div class="people">🧑🏽‍💻 👩🏽‍💻</div></div>
+</section>
+
+<section id="categories" class="section categories">
+ <div class="section-head"><div><p class="eyebrow">FIND YOUR STYLE</p><h2>Shop by Category</h2></div></div>
+ <div class="category-grid">
+  <button data-cat="Electronics">💻<b>Electronics</b><small>128 products</small></button>
+  <button data-cat="Fashion">👕<b>Fashion</b><small>246 products</small></button>
+  <button data-cat="Home">🏠<b>Home & Living</b><small>94 products</small></button>
+  <button data-cat="Beauty">💄<b>Beauty</b><small>86 products</small></button>
+  <button data-cat="Sports">⚽<b>Sports</b><small>72 products</small></button>
+  <button data-cat="Books">📚<b>Books</b><small>53 products</small></button>
+ </div>
+</section>
+
+<section class="newsletter">
+ <div><p class="eyebrow">STAY IN THE LOOP</p><h2>Get 10% off your first order.</h2><p>Join our newsletter for new arrivals, exclusive offers and shopping inspiration.</p></div>
+ <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';"><input type="email" required placeholder="Your email address"><button class="btn primary">Subscribe</button></form>
+</section>
+</main>
+
+<footer id="about">
+ <div class="footer-brand"><a class="logo" href="#">🛍 Shop<span>Wave</span></a><p>Your one-stop destination for products that make everyday life better.</p><div>◉　◎　▶</div></div>
+ <div><h4>Quick Links</h4><a>Home</a><a>Shop</a><a>Categories</a><a>About</a></div>
+ <div><h4>Customer Service</h4><a>Help Center</a><a>Shipping Info</a><a>Returns</a><a>Privacy Policy</a></div>
+ <div><h4>Contact</h4><a>support@shopwave.store</a><a>+252 63 123 4567</a><a>Mogadishu, Somalia</a></div>
+ <div class="copyright">© 2026 ShopWave. All rights reserved.</div>
+</footer>
+
+<div id="cartPanel" class="cart-panel"><div class="cart-top"><h2>Your Cart</h2><button onclick="closeCart()">×</button></div><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="btn primary checkout">Proceed to Checkout</button></div>
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+<script>
+const products=[
+ {name:"iPhone 15 Pro",price:999,cat:"Electronics",icon:"📱",rating:"4.9",reviews:120},
+ {name:"Samsung Galaxy S24",price:799,cat:"Electronics",icon:"📲",rating:"4.8",reviews:94},
+ {name:"MacBook Air M2",price:1199,cat:"Electronics",icon:"💻",rating:"4.9",reviews:76},
+ {name:"Nike Air Max",price:120,cat:"Sports",icon:"👟",rating:"4.7",reviews:64},
+ {name:"Sony WH-1000XM5",price:349,cat:"Electronics",icon:"🎧",rating:"4.8",reviews:88},
+ {name:"iPad Air 5",price:599,cat:"Electronics",icon:"📱",rating:"4.9",reviews:71},
+ {name:"Samsung Galaxy Buds2",price:129,cat:"Electronics",icon:"🎧",rating:"4.7",reviews:51},
+ {name:"Men's Hoodie",price:49,cat:"Fashion",icon:"🧥",rating:"4.6",reviews:42},
+ {name:"Women's Dress",price:69,cat:"Fashion",icon:"👗",rating:"4.8",reviews:59},
+ {name:"Smart Home Lamp",price:39,cat:"Home",icon:"💡",rating:"4.7",reviews:31},
+ {name:"Premium Skincare",price:45,cat:"Beauty",icon:"🧴",rating:"4.8",reviews:38},
+ {name:"Football Pro",price:35,cat:"Sports",icon:"⚽",rating:"4.9",reviews:28}
+];
+let cart=[];
+const grid=document.getElementById("products");
+function render(list=products){
+ grid.innerHTML=list.map((p,i)=>`<article class="product">
+ <div class="pic"><button class="heart">♡</button>${p.icon}</div>
+ <h3>${p.name}</h3><p class="rating">★★★★★ <span>(${p.reviews})</span></p>
+ <div class="price">$${p.price.toFixed(2)}</div>
+ <button class="add" onclick="addToCart(${products.indexOf(p)})">Add to Cart</button></article>`).join("");
+}
+function addToCart(i){cart.push(products[i]);updateCart();openCart();}
+function updateCart(){
+ document.getElementById("cartCount").textContent=cart.length;
+ document.getElementById("cartItems").innerHTML=cart.length?cart.map((p,i)=>`<div class="cart-item"><div class="mini">${p.icon}</div><div><h4>${p.name}</h4><small>$${p.price.toFixed(2)}</small></div><button onclick="removeItem(${i})" style="margin-left:auto;border:0;background:none;cursor:pointer">×</button></div>`).join(""):"<p style='color:#8990a2;font-size:12px;text-align:center;margin-top:60px'>Your cart is empty.</p>";
+ document.getElementById("cartTotal").textContent="$"+cart.reduce((a,p)=>a+p.price,0).toFixed(2);
+}
+function removeItem(i){cart.splice(i,1);updateCart()}
+function openCart(){document.getElementById("cartPanel").classList.add("open");document.getElementById("overlay").classList.add("open")}
+function closeCart(){document.getElementById("cartPanel").classList.remove("open");document.getElementById("overlay").classList.remove("open")}
+document.getElementById("cartBtn").onclick=openCart;
+document.getElementById("searchInput").addEventListener("input",e=>{let q=e.target.value.toLowerCase();render(products.filter(p=>p.name.toLowerCase().includes(q)||p.cat.toLowerCase().includes(q)))});
+document.querySelectorAll(".category-grid button").forEach(b=>b.onclick=()=>{document.getElementById("shop").scrollIntoView();render(products.filter(p=>p.cat===b.dataset.cat))});
+render();updateCart();
+
+</script>
+</body>
+</html>
